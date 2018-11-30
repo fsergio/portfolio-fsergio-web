@@ -1,0 +1,18 @@
+<section class="probootstrap-slider flexslider">
+  <ul class="slides">
+    <!--<li style="background-image: url(../../../../assets/img/slider_1.jpg);">-->
+    <li *ngFor="let slide of slides"[ngStyle]="{ 'background-image': 'url(' + slide.imageURL + ')'}">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="slides-text probootstrap-animate">
+              <h2>Less is more.</h2>
+              <p><a href="https://uicookies.com/" target="_blank" class="btn btn-primary">Get Started</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- END: slider  -->
